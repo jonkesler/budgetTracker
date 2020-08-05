@@ -10,14 +10,12 @@
 
 ## Description 
     
-WorkoutTracker allows the user to continue a previous workout or create a new one.  After each exercise the tracker will show a summary for the workout. 
+This Budget Tracker will allow you to lable and add or subtact transactions related to your budget.  It will keep a running total of your budget, show a graph of your budget and work on or off line.
 
-This application uses a front end implemented with HTML/CSS and the backend implemented with Node.js, Express, a Mongo DB, and a mongoose package.
+This application uses a front end implemented with HTML/CSS and the backend implemented with Node.js, Express, a Mongo DB, and an indexedDb.
 
-The user may enter any exercise to the tracker along with other details depending on the type of exercise. This adds the exercise to a Mongo database. 
-
-With the given code looking through the public folder walking back through the exercises in day 2 made it obvious what was needed. A server.js, models, and routes.  
-    
+The user may enter any budget item and the app will track it.  Once the add of subtract button is clicked, the app adds the transaction to a Mongo database if online.  If offline the transaction will be stored locally in an indexedDb and once back online it will automatically update the Mongo database.
+ 
     
 ## Table of Contents
     
@@ -40,23 +38,23 @@ To run the application locally, first clone this repository with the following c
         
 Next, install the application dependencies.
 
-        With Visual Studio, navigate to the WorkOutTracker directory created when you cloned the Repository.
+        With Visual Studio, navigate to the budgetTracker directory created when you cloned the Repository.
         Right click on the server.js file and open a terminal.
         run npm install
      
-Finally, run the node server locally.
+Now, run the application in node.
 
-        node server
+        npm start
         
-Now, open the local application on port 3000 at the URL: `http://localhost:3000`.
+Finally, open the local application on port 3000 at the URL: `http://localhost:3000`.
 
-**Enjoy your Workout!**
+**Happy budgeting!**
 
 
       
 ## Demo
 
-A demo of the Workout Tracker application can be found [here](https://jkeslerworkouttracker.herokuapp.com/).
+A demo of the Workout Tracker application can be found [here] *no herokupapp for Mongo*(https://jkeslerworkouttracker.herokuapp.com/).
 
 
 
@@ -77,7 +75,7 @@ If you would like to contribute to this project please contact:
   Email:jkesler@hotmail.com   
 
 
-Web URL: https://jkeslerworkouttracker.herokuapp.com/
+Web URL: https://jkeslerworkouttracker.herokuapp.com/  *no mongo db for heroku*
 
 GitHub URL: https://jonkesler.github.io/budgetTracker/
 
